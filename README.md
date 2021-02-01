@@ -1,2 +1,2 @@
 # Carbon estimates at NEON sites
-Can we estimate aboveground biomass at NEON sites using remote sensing data?
+How well can we estimate aboveground biomass at NEON sites using remote sensing data?

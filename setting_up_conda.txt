@@ -1,0 +1,29 @@
+Setting up Anaconda environment with GDAL
+
+Install Anaconda
+Open Terminal
+
+# View list of Conda environments 
+conda info --envs
+
+# create environment with Python 3.8
+conda create -n p38 python=3.8 anaconda
+
+# Activate a conda environment 
+source activate p38
+
+
+# Install GDAL 
+conda install gdal
+
+# Install rasterio
+conda install rasterio
+
+# While environment is activated, create a Jupyter notebook
+python -m ipykernel install --user --name p38 --display-name "Python 3.8 NEON-RSDI"
+
+# Launch Jupyter Notebook
+jupyter notebook
+
+# Exit a conda environment 
+conda deactivate

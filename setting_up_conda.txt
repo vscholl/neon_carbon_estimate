@@ -6,12 +6,14 @@ Open Terminal
 # View list of Conda environments 
 conda info --envs
 
-# create environment with Python 3.8
-conda create -n p38 python=3.8 anaconda
+# create environment with Python 3.7
+conda create -n geo_py37 python=3.7 anaconda
 
 # Activate a conda environment 
-source activate p38
+source activate geo_py37
 
+# While environment is activated, list installed packages 
+conda list
 
 # Install GDAL 
 conda install gdal
@@ -19,8 +21,11 @@ conda install gdal
 # Install rasterio
 conda install rasterio
 
+# Install many geospatial packages at once using a long command
+conda install numpy pandas geopandas scikit-learn jupyterlab matplotlib seaborn xarray rasterstats tqdm pytest sqlalchemy scikit-image scipy pysal beautifulsoup4 boto3 cython statsmodels future graphviz pylint line_profiler nodejs sphinx
+
 # While environment is activated, create a Jupyter notebook
-python -m ipykernel install --user --name p38 --display-name "Python 3.8 NEON-RSDI"
+python -m ipykernel install --user --name geo_py37 --display-name "Python 3.7 Geospatial"
 
 # Launch Jupyter Notebook
 jupyter notebook
